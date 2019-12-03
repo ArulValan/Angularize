@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html ng-app="main">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width" />
+    <title>LICET</title>
+    <link href="bootstrap.css" rel="stylesheet" />
+    <link href="Site.css" rel="stylesheet" />
+    <script src="modernizr-2.6.2.js"></script>
+    <script src="jquery-1.10.2.js"></script>
+    <script src="bootstrap.js"></script>
+    <script src="angular.js"></script>
+    <script src="angular-route.js"></script>
+    <script src="angular-ui-router.js"></script>
+    <script src="angular-resource.js"></script>
+    <script src="/Modules/mainApp.js"></script>
+    <script src="/Controllers/MainController.js"></script>
+    <script src="/Controllers/AuthController.js"></script>
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div style="color: aliceblue;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;font-size: xx-large ;">LICET</div>
+            </div>
+            
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <!-- <li><a href="#/home">Home</a></li> -->
+                    <li ng-if="current_user==='admin'"><a href="#/adminpanel">Admin Console</a></li>
+                    <!-- <li><a href="#/registerform">Register</a></li>
+                     <li><a href="#/contact">Contact</a></li>   -->
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><p class="navbar-right navbar-text">Signed in as {{current_user}}</p></li>
+                    <li><p class="navbar-right navbar-text" ng-hide="authenticated">
+                        <a href="#/login">Login</a> or <a href="#/register">Register</a>
+                    </p></li>
+                    <li><p class="navbar-right navbar-text" ng-show="authenticated">
+                        <a href="#" ng-click="signout()">Logout</a>
+                    </p></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content" >
+        <div ui-view>
+        </div>
+        <hr />
+    </div>
+</body>
+</html>

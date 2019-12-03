@@ -1,0 +1,65 @@
+﻿<div >
+    <h2>Registration Form</h2>
+    <h4>Pls do fill up this form to join LICET</h4>
+    <p>Use this area to provide additional information.</p>
+    <form class="form-auth" method="POST" action="/registerationform" >
+        Name <input type="text" name="name" class="form-control" required><br>
+
+        Age <input type="text" name="age" class="form-control" ><br>
+
+        Date of Birth<input type="date" name="dob" class="form-control" required><br> 
+
+        Father's Name<input type="text" name="fname" class="form-control" required><br>
+
+        Your Religion:<select class="form-control" name="religion"  required>
+            <option value="christian">christian</option>
+            <option value="hindu">Hindu</option>
+        <option ng-option=".muslim">muslim</option> 
+        <option value="buddhism">buddhishm</option>
+        </select><br>
+
+        Community:<select class="form-control" name="comm"  required>
+                <option value="BC">BC</option>
+                <option value="SC">SC</option>
+            <option ng-option="ST">ST</option> 
+            <option value="open">Open category</option>
+            </select><br> 
+
+        Contact phone Number <input type="text" name="phno" class="form-control" required><br>
+
+        <h3>Board exam marks</h3><br>
+        Maths mark out of 200:<input type="text" name="maths" class="form-control" required><br>
+        Physics mark out of 200:<input type="text" name="phys" class="form-control" required><br>
+        Chemistry mark out of 200:<input type="text" name="chem" class="form-control" required><br>
+        <b>Cutoff Marks obtained:</b><input type="text" name="cutoff" class="form-control" required><br>
+
+        <h3>Your Preference to join</h3>
+        Priority 1:<select class="form-control" name="pri1" required>
+                <option value="null">Select a choice</option>
+                <option value="it">Information Technology</option>
+                <option value="ec">Electronic Communication Engg</option>
+            <option ng-option="mech">Mechnical Engg</option> 
+            <option value="eee">Electrical and Electronics Engg</option>
+            <option value="cse">Computer science Engg</option>
+            </select><br> 
+        Priority 2:<select class="form-control" name="pri2" required>
+                <option value="null">Select a choice</option>
+                <option value="it">Information Technology</option>
+                <option value="ec">Electronic Communication Engg</option>
+            <option ng-option="mech">Mechnical Engg</option> 
+            <option value="eee">Electrical and Electronics Engg</option>
+            <option value="cse">Computer science Engg</option>
+            </select><br> 
+            <hr>
+            <br>
+             Your are aware that this registration process has charge to be paid of 1000/- INR.<input type="checkbox" ng-model="checked"><br>
+            <div ng-show="checked">
+               Enter the card number:<input type="text" class="form-control" required>
+            </div>
+        <br>
+        <input type="submit" value="Submit form" class="btn btn-primary"> <span></span>
+        <input type="reset" value="clear" class="btn btn-primary">
+    </form>
+</div>
+
+

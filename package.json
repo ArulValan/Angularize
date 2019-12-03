@@ -1,0 +1,33 @@
+{
+  "name": "AngularizeWebsite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "angular-resource": "^1.4.7",
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.14.1",
+    "cookie-parser": "^1.4.4",
+    "csv": "^5.3.0",
+    "csv-express": "^1.2.2",
+    "ejs": "^2.7.4",
+    "express": "^4.13.3",
+    "express-session": "^1.12.1",
+    "fast-csv": "^3.4.0",
+    "jade": "^1.11.0",
+    "json2csv": "^4.5.4",
+    "mongoose": "^4.2.4",
+    "morgan": "^1.9.1",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
+    "path": "^0.12.7",
+    "serve-favicon": "^2.5.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "nomi ali <noomiali@yahoo.com> (http://www.stackoverflow.com/users/1716709/nomi-ali)",
+  "license": "ISC"
+}
